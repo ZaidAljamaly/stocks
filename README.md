@@ -1,0 +1,2 @@
+# stocks
+my first application
