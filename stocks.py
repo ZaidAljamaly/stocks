@@ -25,11 +25,11 @@ streamlit.line_chart(tt.Open)
 
 
 
-period_of_stock=streamlit.sidebar.text_input('the period id','1d')
+period_of_stock=streamlit.sidebar.text_input('the period ','1d')
 
-start_of_stock=streamlit.sidebar.text_input('the opening','2010-5-31')
+start_of_stock=streamlit.sidebar.text_input('from','2010-5-31')
 
-end_of_stock=streamlit.sidebar.text_input('the closing','2020-5-31')
+end_of_stock=streamlit.sidebar.text_input('to','2020-5-31')
 
 
 time_frame = stock_ticker.history(period=period_of_stock , start=start_of_stock ,end=end_of_stock)
